@@ -1,6 +1,4 @@
-# public
-Public portfolio
-[README.md](https://github.com/user-attachments/files/23856669/README.md)
+
 # TeamSyncAI
 
 An AI-powered Progressive Web App (PWA) that automates team management for amateur sports coaches. TeamSyncAI acts as your "Assistant Manager," using AI to handle player communication, availability tracking, and smart reminder campaigns.
