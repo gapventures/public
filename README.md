@@ -32,6 +32,27 @@ Managing an amateur sports team involves countless hours of coordination—confi
 - **Natural Language Processing** - Powered by Google Gemini AI
 - **Reliability Scoring** - Automatic calculation based on RSVP accuracy and attendance history
 
+### Free Lineup Card Geneator and Playing Time Calculator
+- **Public Marketing Tool** - Free lineup generator available without signup
+- **PDF Export with Email Delivery** - Generates two professional PDF documents:
+- **Lineup Card (5.5" x 8.5")** - Compact dugout card with batting order, reserves, pitching rotation, and game details
+- **Playing Time Grid** - Detailed inning-by-inning position assignments with fairness alerts
+- **Fairness Engine** - Ensures equal playing time distribution across all players
+- **Auto-Balance Feature** - One-click lineup balancing for fair playing time
+- **Lead Capture** - Email collection for lineup delivery and marketing follow-up
+
+###  Email Notifications
+- **SendGrid Integration** -Transactional emails for key user touchpoints
+- **Welcome Emails** - Sent on user registration
+- **Team Invitations** - Email invites alongside SMS with join links
+- **Payment Confirmations** - Automated receipts for completed payments
+- **Lineup Card Delivery** - PDF attachments sent directly to user's inbox
+
+###  Digital Signatures
+- **SendGrid Integration**  Secure payment requests with automated confirmations
+-  **Pay-Per-Usage Billing** - SMS cost tracking with campaign cost estimations
+-  **Team Usage Dashboards** - Monitor SMS usage and costs per team
+
 ### Payment Processing
 - **Helcim Integration** - Secure payment requests with automated confirmations
 - **Pay-Per-Usage Billing** - SMS cost tracking with campaign cost estimations
@@ -68,10 +89,13 @@ Managing an amateur sports team involves countless hours of coordination—confi
 
 ### Integrations
 - **Twilio** - SMS messaging
+- **SendGrid** - Transactional email with PDF attachments
 - **Helcim** - Payment processing
 - **Google Gemini AI** - Natural language processing
 - **Google Maps Places API** - Location autocomplete
 - **UploadThing** - File uploads
+- **DocuSeal** - Digital signature management
+- **PDFKit** - Server-side PDF generation
 
 ## Architecture Highlights
 
@@ -110,32 +134,7 @@ Managing an amateur sports team involves countless hours of coordination—confi
 - Twilio account (for SMS)
 - Google Cloud API key (for Maps and Gemini AI)
 
-### Environment Variables
-```env
-DATABASE_URL=postgresql://...
-SESSION_SECRET=your-session-secret
-TWILIO_PHONE_NUMBER=+1...
-TWILIO_ACCOUNT_SID=...
-TWILIO_AUTH_TOKEN=...
-GEMINI_API_KEY=...
-VITE_GOOGLE_MAPS_API_KEY=...
-HELCIM_API_KEY=...
-HELCIM_WEBHOOK_SECRET=...
-```
 
-### Installation
-```bash
-# Install dependencies
-npm install
-
-# Push database schema
-npm run db:push
-
-# Start development server
-npm run dev
-```
-
-The app will be available at `http://localhost:5000`.
 
 ## Project Structure
 
